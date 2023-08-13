@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Создать
+{% endblock %}
+
+{% block content %}
+<div class="page1">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>
+          <input class="update-btn" type="submit" value="Изменять">
+        </p>
+    </form>
+</div>
+{% endblock %}

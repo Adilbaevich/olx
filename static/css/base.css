@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
+header {
+    background-color: #002f34;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.logo img{
+    width: 80px;
+    height: 50px;
+}
+
+
+.categories {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .categories li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .categories a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .categories a:hover, a.on {
+    background-color: #0ef43c;
+  }
+ .title{
+  text-align:inherit;
+  width: 1000px;
+  margin: 20px auto 20px auto;
+  font-weight: normal;
+ }
+ .title h3{
+  margin-top: 150px;
+  padding-bottom: 180px;
+ }
+
+  .container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  footer {
+    background-color: #002f34;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .product {
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+ .product > div {
+    margin: 30px;
+ }
+ 
+ .product img {
+    width: 200px;
+    height: 150px;
+ }
+
+ .transport {
+  padding: 0 200px;
+  display: flex;
+  margin-bottom: 173px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.transport > div {
+  margin: 30px;
+}
+
+.transport img {
+  width: 200px;
+  height: 150px;
+}
+
+
+.animal {
+  padding: 0 200px;
+  margin-bottom: 173px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.animal > div {
+  margin: 30px;
+}
+
+.animal img {
+  width: 200px;
+  height: 150px;
+}
+
+.furnature {
+  padding: 0 200px;
+  margin-bottom: 173px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.furnature > div {
+  margin: 30px;
+}
+
+.furnature img {
+  width: 200px;
+  height: 150px;
+}
+
+ .business {
+  padding: 0 200px;
+  margin-bottom: 173px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.business > div {
+  margin: 30px;
+}
+
+.business img {
+  width: 200px;
+  height: 150px;
+}
+
+
+

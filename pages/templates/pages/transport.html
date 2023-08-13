@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Транспорт
+{% endblock %}
+
+{% block content %}
+<div class="create-product">
+  <div class="btn btn-warning">
+    <p><a href="{% url 'create_transport' %}">ДОБАВИТЬ ПРОДУКТ</a></p>
+  </div>
+</div>
+<div class="album py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-ms-2 row-cols-md-3 g-3">
+      {% for product in products %}
+      <div class="col">
+        <div class="card shadow-sm">
+          <a href="{{ product.get_absolute_url }}">
+            <img class="product-img bd-placeholder-img card-img-top" src="{{ product.image.url }}" alt="">
+          </a>
+          <div class="card-body">
+            <h2 class="card-text">{{ product.title }}</h2>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+{% endblock %}

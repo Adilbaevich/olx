@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Для дома и сада
+{% endblock %}
+
+{% block content %}
+<div class="album py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <img src="{{ product4.image.url }}" alt="">
+      <h2 class="title1">{{ product4.title }}</h2>
+      <p class="description">{{ product4.description }}</p>
+      <p class="price"> Цена: {{ product4.price }}$</p>
+      <p class="author">Автор: {{ product4.author }}</p>
+    </div>
+  </div>
+  <div class="create-product">
+    <div class="btn btn-warning">
+      <p>
+        <a href="{{ product4.get_absolute_url }}delete">Delete</a>
+      </p>
+    </div>
+    <div class="btn btn-warning">
+      <p>
+        <a href="{{ product4.get_absolute_url }}update">Update</a>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Электроника
+{% endblock %}
+
+{% block content %}
+<div class="create-product">
+  <div class="btn btn-warning">
+    <p><a href="{% url 'create' %}">ДОБАВИТЬ ПРОДУКТ</a></p>
+  </div>
+</div>
+<div class="album py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-ms-2 row-cols-md-3 g-3">
+      {% for product2 in products2 %}
+      <div class="col">
+        <div class="card shadow-sm">
+          <a href="{{ product2.get_absolute_url }}">
+            <img class="product-img bd-placeholder-img card-img-top" src="{{ product2.image.url }}" alt="">
+          </a>
+          <div class="card-body">
+            <h2 class="card-text">{{ product2.title }}</h2>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+{% endblock %}

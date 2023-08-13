@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Бизнес и услуга
+{% endblock %}
+
+{% block content %}
+<div class="business products">
+      <div>
+         <h2>{{ product1.title }}</h2>
+         <img src="{{ product1.image.url }}" alt="">
+         <p>{{ product1.description }}</p>
+         <p>{{ products1.date }}</p>
+         <p>{{ product1.price }}$</p>
+      </div>
+</div>
+{% endblock %}
